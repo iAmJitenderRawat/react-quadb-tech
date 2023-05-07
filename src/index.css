@@ -14,7 +14,20 @@ body{
 
 #grid{
   display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  color: #000;
+}
+ 
+
+ @media (min-width: 768px) { 
+ .w-80{
+  width: 50%;
+ }
+  #grid{
+  display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
   color: #000;
 }
+  }

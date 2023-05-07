@@ -38,7 +38,7 @@ const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
 localStorage.setItem("usersLS", JSON.stringify(users));
 
   return (
-    <main className="w-50 m-auto p-5">
+    <main className="w-80 m-auto p-5 ">
       <p className="text-center">Registeration and login is mandatory to book all shows</p>
       <h1 className="text-center">Register</h1>
       <form onSubmit={handleSubmit}>

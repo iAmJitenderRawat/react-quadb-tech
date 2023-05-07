@@ -78,7 +78,7 @@ const Login = () => {
   console.log("userData", userData);
 
   return (
-    <main className="w-50 m-auto p-5">
+    <main className="w-80 m-auto p-5">
       <p className="text-center">
         Registeration and login is mandatory to book all shows
       </p>

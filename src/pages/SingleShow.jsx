@@ -29,15 +29,12 @@ const SingleShow = () => {
     );
   }
   return (
-    <main className="w-75 m-10 mx-auto">
+    <main className="w-80 m-10 mx-auto">
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2,1fr)",
-          margin: "18px",
-        }}
+        className="grid"
       >
         <img
+          className="img-fluid"
           style={{ height: "85vh" }}
           src={
             showData?.image?.original ||

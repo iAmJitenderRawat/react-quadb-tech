@@ -28,7 +28,7 @@ const AllShows = () => {
     );
   }
   return (
-    <div className="w-75 m-auto p-5">
+    <div className="w-80 m-auto p-5">
       <h1 className="text-center">All Shows</h1>
       <main id="grid">
         {showsData &&
@@ -40,18 +40,22 @@ const AllShows = () => {
                   to={`/shows/${data.show.id}`}
                 >
                   <img
-                    className="card-img-top h-75"
+                    className="card-img-top h-80 img-fluid"
                     src={
                       data.show.image?.medium ||
                       "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
                     }
                     alt={data.show.name}
                   />
-                  <h3>Name: {data.show.name}</h3>
-                  <h4>Genres: {data.show.genres.join(", ")}</h4>
-                  <h4>Rating: {data.show.rating.average || "N.A."}</h4>
-                  <button className="btn btn-danger w-25 m-auto mb-3">Book</button>
-                  <p>Available in {data.show.language} language.</p>
+                  <div>
+                    <h3>Name: {data.show.name}</h3>
+                    <h4>Genres: {data.show.genres.join(", ")}</h4>
+                    <h4>Rating: {data.show.rating.average || "N.A."}</h4>
+                    <button className="btn btn-danger w-25 m-auto mb-3">
+                      Book
+                    </button>
+                    <p>Available in {data.show.language} language.</p>
+                  </div>
                 </Link>
               </div>
             );
