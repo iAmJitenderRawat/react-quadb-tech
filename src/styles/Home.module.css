@@ -1,0 +1,10 @@
+.sec1{
+    width: 80%;
+        padding: 50px;
+}
+.sec1>h1{
+    font-size: 100px;
+}
+.sec1>p{
+    font-size: larger;
+}

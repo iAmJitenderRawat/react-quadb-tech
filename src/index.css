@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+  background-color:rgb(38, 40, 42);
+  color:white;
+
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  color: #000;
+}
